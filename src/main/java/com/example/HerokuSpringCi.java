@@ -17,6 +17,12 @@ public class HerokuSpringCi {
 		return "Hello World!";
 	}
 
+	@RequestMapping("/test")
+	@ResponseBody
+	String test() {
+		return "It works!";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(HerokuSpringCi.class, args);
 	}
